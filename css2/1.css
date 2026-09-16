@@ -613,3 +613,121 @@
     grid-column: span 2;
     grid-row: span 2;
 }
+.footer_section {
+    width: 100%;
+    background-image: url(/images2/footer.png);
+    background-size: cover;
+    background-position: center;
+    padding: 35px 0 20px 0;
+    color: #ffffff;
+}
+
+.footer_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer_main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 60px;
+    align-items: start;
+}
+.footer_logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.logo_f {
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+.footer_top_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.footer_title {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0 0 18px 0;
+    color: #f8c183;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer_contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer_contact li {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fefefe;
+    margin-bottom: 6px;
+}
+.footer_contact li p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #fff;
+}
+.icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    display: inline-block;
+    margin-right: 8px;
+
+}
+.contact_link {
+    color: #fefefe;
+    text-decoration: none;
+}
+.social_icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.social_icon img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+.footer_badge img {
+    height: 55px;
+    width: auto;
+}
+.footer_links_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 12px;
+}
+.links_col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.links_col a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.links_col a:hover {
+    color: #f8c183;
+}
+.footer_bottom {
+    text-align: center;
+    margin-top: 33px;
+}
+.footer_bottom p {
+    margin: 0;
+    font-size: 15px;
+    color: #bfbdbd;
+    font-weight: 100;
+}
