@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phoenix Crowne Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css2/1.css">
 </head>
+
 <body>
     <header class="header">
-        <div class="header_left">
-            <a href="#" class="logo">
-                <img src="/icon2/logo.png" alt="Phoenix Crowne Hotel Logo" class="logo_1">
-                <img src="/icon2/logo2.png" alt="Phoenix Crowne Hotel Logo 2" class="logo_2">
-            </a>
-        </div>
-        <div class="header_right">
-            <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">ROOMS & SUITES</a></li>
-                <li class="menu_dropdown">
-                    <a href="#">DINING</a>
+    <div class="header_wrapper">
+        <div class="header_container">
+            <div class="header_left">
+                <a href="#">
+                    <img src="/icon2/logo.png" alt="Logo" class="logo_1">
+                    <img src="/icon2/logo2.png" alt="Logo" class="logo_2">
+                </a>
+            </div>
+            <div class="header_center">
+                <nav class="nav_menu">
                     <ul>
-                        <li><a href="#">GOLDEN PHOENIX RESTAURANT</a></li>
-                        <li><a href="#">POOL BAR</a></li>
-                        <li><a href="#">ROOF TOP LOUNGE BAR</a></li>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">ROOMS & SUITES</a></li>
+                        <li class="menu_dropdown">
+                            <a href="#">DINING</a>
+                            <ul class="dropdown_submenu">
+                                <li><a href="#">GOLDEN PHOENIX RESTAURANT</a></li>
+                                <li><a href="#">POOL BAR</a></li>
+                                <li><a href="#">ROOF TOP LOUNGE BAR</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MEETING & EVENT</a></li>
+                        <li><a href="#">FACILITIES</a></li>
+                        <li><a href="#">SPECIAL OFFERS</a></li>
+                        <li><a href="#">BLOGS</a></li>
                     </ul>
-                </li>
-                <li><a href="#">MEETING & EVENT</a></li>
-                <li><a href="#">SPA</a></li>
-                <li><a href="#">FACILITIES</a></li>
-                <li><a href="#">SPECIAL OFFERS</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="btn_book_1">BOOK NOW</a>
+                </nav>
+                <a href="#" class="btn_book_1">BOOK NOW</a>
+            </div>
+            <div class="header_right">
+                <div class="language">
+                    <input type="checkbox" id="lang_toggle" class="lang_checkbox">
+                    <label for="lang_toggle" class="lang_selected">
+                        <img src="/icon2/united-states.png" alt="US Flag">
+                        <span>EN</span>
+                    </label>
+                    <ul class="lang_dropdown">
+                        <li><a href="#"><img src="/icon2/united-states.png" alt="US"> EN</a></li>
+                        <li><a href="#"><img src="/icon2/vietnam.png" alt="VI"> VI</a></li>
+                        <li><a href="#"><img src="/icon2/china.png" alt="CN"> CN</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-        <div class="language">
-            <select>
-                <option selected>EN</option>
-                <option>VI</option>
-                <option>CN</option>
-            </select>
-        </div>
-    </header>
+    </div>
+</header>
     <section class="booking_class">
         <div class="booking_content">
-            <h2>REFINED FIVE-STAR HOSPITALITY CROWNED IN THE HEART OF VINH</h2>
-            <p>Where refined design meets impeccable service, delivered with warmth</p>
+            <p class="title_1">REFINED FIVE-STAR HOSPITALITY</p>
+            <p class="title_2">CROWNED IN THE HEART OF VINH</p>
+            <p class="sub_title">Where refined design meets impeccable service, delivered with warmth</p>
         </div>
         <div class="booking_box">
             <div class="booking_item">
@@ -92,355 +110,498 @@
         </div>
     </section>
     <section class="about_section">
-    <div class="about_top_container">
-        <div class="about_top">
-            <div class="about_content">
-                <h1>PHOENIX CROWNE VINH HOTEL</h1>
-                <h3>GENUINE LUXURY IS DEFINED BY SERENITY</h3>
-                <p>In the vibrant heart of Vinh City — the economic, cultural, and commercial hub of the North Central region — Phoenix Crowne Vinh Hotel rises as a new symbol of elegance, refinement, and international five-star distinction.</p>
-                <p>Ideally located at 78 Nguyen Thi Minh Khai, one of the city’s most prestigious central boulevards, the hotel is envisioned as a dynamic meeting point for business leaders, discerning travelers, and the local community. Here, every stay goes beyond accommodation, transforming into a thoughtfully curated, deeply personalized, and truly memorable experience.</p>
+        <div class="container-about">
+            <div class="container-about">
+                <div class="about_padding">
+                    <div class="about_grid">
+                        <!-- Khối văn bản bên trái -->
+                        <div class="about_content">
+                            <p class="about_title">PHOENIX CROWNE VINH HOTEL</p>
+                            <p class="about_subtitle">Genuine luxury is defined by serenity</p>
+                            <p class="about_text">In the vibrant heart of Vinh City — the economic, cultural, and
+                                commercial hub of the North Central region — Phoenix Crowne Vinh Hotel rises as a new
+                                symbol of elegance, refinement, and international five-star distinction.</p>
+                            <p class="about_text">Ideally located at 78 Nguyen Thi Minh Khai, one of the city’s most
+                                prestigious central boulevards, the hotel is envisioned as a dynamic meeting point for
+                                business leaders, discerning travelers, and the local community. Here, every stay goes
+                                beyond accommodation, transforming into a thoughtfully curated, deeply personalized, and
+                                truly memorable experience.</p>
+                        </div>
+
+                        <!-- Khối ảnh bên phải -->
+                        <div class="about_image_wrapper">
+                            <img src="/images2/about.jpg" alt="Luxurious lobby chandelier" class="about_image"
+                                loading="lazy">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="about_image">
-                <img src="/images2/about.jpg" alt="Phoenix Crowne Vinh Hotel">
+    </section>
+    <section class="container-gallery">
+        <div class="gallery_wrapper">
+            <div class="gallery_slider_group">
+                <div class="gallery_overflow">
+                    <div class="gallery_track">
+                        <div class="gallery_item"><img src="/images2/1.png" alt="Gallery 1"></div>
+                        <div class="gallery_item"><img src="/images2/2.png" alt="Gallery 2"></div>
+                        <div class="gallery_item"><img src="/images2/3.png" alt="Gallery 3"></div>
+                        <div class="gallery_item"><img src="/images2/4.png" alt="Gallery 4"></div>
+                        <div class="gallery_item"><img src="/images2/5.png" alt="Gallery 5"></div>
+                        <div class="gallery_item"><img src="/images2/6.png" alt="Gallery 6"></div>
+                    </div>
+                </div>
+                <button type="button" aria-label="Previous images" class="gallery_btn prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button type="button" aria-label="Next images" class="gallery_btn next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+            <button type="button" class="btn_view_photos">
+                VIEW ALL PHOTOS <span class="arrow">→</span>
+            </button>
+        </div>
+    </section>
+    <section class="room_section">
+        <div class="room_container">
+            <div class="room_header">
+                <h2>OUR ROOMS & SUITE</h2>
+                <p>ELEVATE YOUR STAY</p>
+                <hr style="width: 100px; border: 1px solid #919191; margin: 25px auto;">
+            </div>
+            <div class="slide">
+                <div class="room" id="room1">
+                    <img src="/images2/r1.jpeg">
+                    <a href="#room7" class="prev">←</a>
+                    <a href="#room2" class="next">→</a>
+                    <h3>DELUXE ROOM</h3>
+                    <a href="#">VIEW DETAILS →</a>
+                </div>
+                <div class="room" id="room2">
+                    <img src="/images2/r2.jpeg">
+                    <a href="#room1" class="prev">←</a>
+                    <a href="#room3" class="next">→</a>
+                    <h3>EXECUTIVE ROOM</h3>
+                    <a href="#">VIEW DETAILS →</a>
+                </div>
+                <div class="room" id="room3">
+                    <img src="/images2/r3.jpeg">
+                    <a href="#room2" class="prev">←</a>
+                    <a href="#room4" class="next">→</a>
+                    <h3>TERRACE PREMIUM</h3>
+                    <a href="#">VIEW DETAILS →</a>
+                </div>
+                <div class="room" id="room4">
+                    <img src="/images2/r4.jpeg">
+                    <a href="#room3" class="prev">←</a>
+                    <a href="#room5" class="next">→</a>
+                    <h3>CROWNE SUITE</h3>
+                    <a href="#">VIEW DETAILS →</a>
+                </div>
+                <div class="room" id="room5">
+                    <img src="/images2/r5.jpeg">
+                    <a href="#room4" class="prev">←</a>
+                    <a href="#room6" class="next">→</a>
+                    <h3>PHOENIX RESIDENCE SUITE</h3>
+                    <a href="#">VIEW DETAILS →</a>
+                </div>
+                <div class="room" id="room6">
+                    <img src="/images2/r6.jpeg">
+                    <a href="#room5" class="prev">←</a>
+                    <a href="#room7" class="next">→</a>
+                    <h3>ROYAL SUITE</h3>
+                    <a href="#">VIEW DETAILS →</a>
+                </div>
+                <div class="room" id="room7">
+                    <img src="/images2/r7.jpeg">
+                    <a href="#room6" class="prev">←</a>
+                    <a href="#room1" class="next">→</a>
+                    <h3>ROYAL FAMILY SUITE</h3>
+                    <a href="#">VIEW DETAILS →</a>
+                </div>
+            </div>
+            <div class="room_count">
+                <span id="current_room">1</span> / 7
             </div>
         </div>
-    </div>
-    <div class="about_bottom_container">
-        <div class="about_bottom">
-            <div class="about_gallery">
-                <img src="/images2/1.png">
-                <img src="/images2/2.png">
-                <img src="/images2/3.png">
-                <img src="/images2/4.png">
+    </section>
+    <section class="dining_section">
+        <div class="dining_container">
+            <div class="dining_header">
+                <h2>DINING SIGNATURE</h2>
+                <h3>CRAFTED CULINARY EXPERIENCES</h3>
+                <hr style="width: 100px; border: 1px solid #9a9797; margin: 25px auto;">
             </div>
-            <a href="#" class="btn_view_photos">VIEW ALL PHOTOS</a>
-        </div>
-    </div>
-</section>
-<section class="room_section">
-    <div class="room_container">
-        <div class="room_header">
-            <h2>OUR ROOMS & SUITES</h2>
-            <p>ELEVATE YOUR STAY</p>
-            <hr style="width: 100px; border: 1px solid #ffffff; margin: 20px auto;">
-        </div>
-        <div class="slide">
-            <div class="room" id="room1">
-                <img src="/images2/r1.jpeg">
-                <a href="#room7" class="prev">←</a>
-                <a href="#room2" class="next">→</a>
-                <h3>DELUXE ROOM</h3>
-                <a href="#">VIEW DETAILS →</a>
-            </div>
-            <div class="room" id="room2">
-                <img src="/images2/r2.jpeg">
-                <a href="#room1" class="prev">←</a>
-                <a href="#room3" class="next">→</a>
-                <h3>EXECUTIVE ROOM</h3>
-                <a href="#">VIEW DETAILS →</a>
-            </div>
-            <div class="room" id="room3">
-                <img src="/images2/r3.jpeg">
-                <a href="#room2" class="prev">←</a>
-                <a href="#room4" class="next">→</a>
-                <h3>TERRACE PREMIUM</h3>
-                <a href="#">VIEW DETAILS →</a>
-            </div>
-            <div class="room" id="room4">
-                <img src="/images2/r4.jpeg">
-                <a href="#room3" class="prev">←</a>
-                <a href="#room5" class="next">→</a>
-                <h3>CROWNE SUITE</h3>
-                <a href="#">VIEW DETAILS →</a>
-            </div>
-            <div class="room" id="room5">
-                <img src="/images2/r5.jpeg">
-                <a href="#room4" class="prev">←</a>
-                <a href="#room6" class="next">→</a>
-                <h3>PHOENIX RESIDENCE SUITE</h3>
-                <a href="#">VIEW DETAILS →</a>
-            </div>
-            <div class="room" id="room6">
-                <img src="/images2/r6.jpeg">
-                <a href="#room5" class="prev">←</a>
-                <a href="#room7" class="next">→</a>
-                <h3>ROYAL SUITE</h3>
-                <a href="#">VIEW DETAILS →</a>
-            </div>
-            <div class="room" id="room7">
-                <img src="/images2/r7.jpeg">
-                <a href="#room6" class="prev">←</a>
-                <a href="#room1" class="next">→</a>
-                <h3>ROYAL FAMILY SUITE</h3>
-                <a href="#">VIEW DETAILS →</a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="dining_section">
-    <div class="dining_container">  
-        <div class="dining_header">
-            <h2>DINING SIGNATURE</h2>
-            <h3>CRAFTED CULINARY EXPERIENCES</h3>
-            <hr style="width: 100px; border: 1px solid #9a9797; margin: 30px auto;">
-        </div>
-        <div class="dining_grid">
-            <div class="dining_card">
-                <div class="dining_image">
-                    <img src="/images2/d1.png">
+            <div class="dining_grid">
+                <div class="dining_card">
+                    <div class="dining_image">
+                        <img src="/images2/d1.png">
+                    </div>
+                    <div class="dining_info">
+                        <h3>GOLDEN PHOENIX RESTAURANT</h3>
+                        <h4>Signature All-Day Dining</h4>
+                        <p>Perched on the 4th floor with panoramic views over the vibrant city of Vinh, Golden Phoenix
+                            Restaurant is the signature all-day dining destination of Phoenix Crowne Vinh Hotel, where
+                            refined flavors meet elevated perspectives.</p>
+                        <a href="#" class="read_more">
+                                Read More
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                    </div>
                 </div>
-                <div class="dining_info">
-                    <h3>GOLDEN PHOENIX RESTAURANT</h3>
-                    <h4>Signature All-Day Dining</h4>
-                    <p>Perched on the 4th floor with panoramic views over the vibrant city of Vinh, Golden Phoenix Restaurant is the signature all-day dining destination of Phoenix Crowne Vinh Hotel, where refined flavors meet elevated perspectives.</p>
-                    <a href="#" class="read_more">READ MORE</a>
+                <div class="dining_card">
+                    <div class="dining_image">
+                        <img src="/images2/d2.png">
+                    </div>
+                    <div class="dining_info">
+                        <h3>POOL BAR</h3>
+                        <h4>A Refined Escape by the Water</h4>
+                        <p>Located on the 5th floor of Phoenix Crowne Vinh Hotel, Pool Bar offers a serene retreat where
+                            the rhythm of the city gently fades into moments of relaxation by the crystal-clear water.
+                        </p>
+                        <a href="#" class="read_more">
+                                Read More
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                    </div>
                 </div>
-            </div>
-            <div class="dining_card">
-                <div class="dining_image">
-                    <img src="/images2/d2.png">
+                <div class="dining_card">
+                    <div class="dining_image">
+                        <img src="/images2/d3.png">
+                    </div>
+                    <div class="dining_info">
+                        <h3>ROOF TOP LOUNGE BAR</h3>
+                        <h4>Above the City.Beyond Expectations</h4>
+                        <p>Perched on the 18th floor of Phoenix Crowne Vinh Hotel, Sky Bar is an elevated destination
+                            where refined nightlife meets breath-taking city views. From golden sunsets to the city
+                            lights after dark, the skyline of Vinh unfolds in a captivating panorama beneath you.</p>
+                        <a href="#" class="read_more">
+                                Read More
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                    </div>
                 </div>
-                <div class="dining_info">
-                    <h3>POOL BAR</h3>
-                    <h4>A Refined Escape by the Water</h4>
-                    <p>Located on the 5th floor of Phoenix Crowne Vinh Hotel, Pool Bar offers a serene retreat where the rhythm of the city gently fades into moments of relaxation by the crystal-clear water.</p>
-                    <a href="#" class="read_more">READ MORE</a>
-                </div>
-            </div>
-            <div class="dining_card">
-                <div class="dining_image">
-                    <img src="/images2/d3.png">
-                </div>
-                <div class="dining_info">
-                    <h3>ROOF TOP LOUNGE BAR</h3>
-                    <h4>Above the City.Beyond Expectations</h4>
-                    <p>Perched on the 18th floor of Phoenix Crowne Vinh Hotel, Sky Bar is an elevated destination where refined nightlife meets breath-taking city views. From golden sunsets to the city lights after dark, the skyline of Vinh unfolds in a captivating panorama beneath you.</p>
-                    <a href="#" class="read_more">READ MORE</a>
-                </div>
-            </div>
-            <div class="dining_card">
-                <div class="dining_image">
-                    <img src="/images2/d4.png">
-                </div>
-                <div class="dining_info">
-                    <h3>MEETING & EVENT</h3>
-                    <h4>Where Business Connects and Celebrations Shine</h4>
-                    <p>With elegant design, modern audio-visual facilities, flexible event configurations, a professional event management team, curated culinary services, and attentive hospitality, Phoenix Crowne Vinh Hotel ensures every event is thoughtfully crafted into a seamless, refined, and truly...</p>
-                    <a href="#" class="read_more">READ MORE</a>
+                <div class="dining_card">
+                    <div class="dining_image">
+                        <img src="/images2/d4.png">
+                    </div>
+                    <div class="dining_info">
+                        <h3>MEETING & EVENT</h3>
+                        <h4>Where Business Connects and Celebrations Shine</h4>
+                        <p>With elegant design, modern audio-visual facilities, flexible event configurations, a
+                            professional event management team, curated culinary services, and attentive hospitality,
+                            Phoenix Crowne Vinh Hotel ensures every event is thoughtfully crafted into a seamless,
+                            refined, and truly...</p>
+                        <a href="#" class="read_more">
+                                Read More
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="other_section">
-    <div class="other_container">
-        <div class="other_header">
-            <h2>OTHER FACILITIES</h2>
-             <hr style="width: 100px; border: 1px solid #9a9797; margin: 30px auto;">
-        </div>
-        <div class="other_bottom">
-            <div class="other_info">
-                <div class="other_card">
+    </section>
+    <section class="other_section">
+        <div class="other_container">
+            <div class="other_header">
+                <h2>OTHER FACILITIES</h2>
+                <div class="divider_line"></div>
+            </div>
+            <div class="other_grid">
+                <article class="other_card">
                     <div class="other_content">
                         <div class="other_image">
-                        <img src="/images2/ot1.png">
+                            <img src="/images2/ot1.png" alt="SERENITY SPA" loading="lazy">
+                        </div>
+                        <div class="other_title">
+                            <div class="title_group">
+                                <h3>SERENITY SPA</h3>
+                                <h4>Where Perfect Balance Is Restored</h4>
+                            </div>
+                            <p>Serenity Spa is a refined sanctuary designed to awaken inner calm, where body and mind
+                                gently rediscover their natural rhythm after hustle and bustle of modern life. Set
+                                within an atmosphere of understated luxury, tranquility, and elegance, the spa offers a
+                                deeply immersive escape defined by attentive, graceful, and</p>
+                            <a href="#" class="read_more">
+                                Read More
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    <div class="other_title">
-                        <h3>SERENITY SPA</h3>
-                        <h4>Where Perfect Balance Is Restored</h4>
-                        <p>Serenity Spa is a refined sanctuary designed to awaken inner calm, where body and mind gently rediscover their natural rhythm after hustle and bustle of modern life. Set within an atmosphere of understated luxury, tranquility, and elegance, the spa offers a...</p>
-                        <a href="#" class="read_more">READ MORE</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="other_card">
+                </article>
+                <article class="other_card">
                     <div class="other_content">
                         <div class="other_title">
-                        <h3>SWIMMING POOL</h3>
-                        <h4>A Serene Escape Above the City</h4>
-                        <p>Located on the 5th floor of Phoenix Crowne Vinh Hotel, the outdoor swimming pool offers an open and refreshing retreat, where comfort and refined resort-style leisure come together in a space filled with natural light.</p>
-                        <a href="#" class="read_more">READ MORE</a>
+                            <div class="title_group">
+                                <h3>SWIMMING POOL</h3>
+                                <h4>A Serene Escape Above the City</h4>
+                            </div>
+                            <p>Located on the 5th floor of Phoenix Crowne Vinh Hotel, the outdoor swimming pool offers
+                                an open and refreshing retreat, where comfort and refined resort-style leisure come
+                                together in a space filled with natural light.</p>
+                            <a href="#" class="read_more">
+                                Read More
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="other_image">
+                            <img src="/images2/ot2.png" alt="SWIMMING POOL" loading="lazy">
+                        </div>
                     </div>
-                    <div class="other_image">
-                        <img src="/images2/ot2.png">
-                    </div>
-                    </div>
-                </div>
-                <div class="other_card">
+                </article>
+                <article class="other_card">
                     <div class="other_content">
                         <div class="other_image">
-                        <img src="/images2/ot3.png">
+                            <img src="/images2/ot3.png" alt="GYM" loading="lazy">
+                        </div>
+                        <div class="other_title">
+                            <div class="title_group">
+                                <h3>GYM</h3>
+                                <h4>Where fitness meets refined living</h4>
+                            </div>
+                            <p>The gym at Phoenix Crowne Vinh Hotel is designed as a modern and refined training space,
+                                where physical fitness becomes a natural part of a balanced lifestyle.</p>
+                            <a href="#" class="read_more">
+                                Read More
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    <div class="other_title">
-                        <h3>GYM</h3>
-                        <h4>Where fitness meets refined living</h4>
-                        <p>The gym at Phoenix Crowne Vinh Hotel is designed as a modern and refined training space, where physical fitness becomes a natural part of a balanced lifestyle.</p>
-                        <a href="#" class="read_more">READ MORE</a>
-                    </div>
-                    </div>
-                </div>
+                </article>
+
             </div>
         </div>
-    </div>
-</section>
-<section class="special_section">
-    <div class="special_container">
-        <div class="special_header">
-            <h2>SPECIAL OFFERS</h2>
-            <hr style="width: 100px; border: 1px solid #9a9797; margin: 30px auto;">
-        </div>
-        <div class="special_bottom">
-            <div class="special_info">
-                <div class="special_content">
-                    <div class="special_card">
-                        <img src="/images2/sp1.png">
-                    </div>
-                    <div class="special_title">
-                        <h3>OPENING PROMOTION</h3>
-                        <p>Opening Promotion offers are available for all room types at Phoenix Crowne Vinh Hotel</p>
-                    </div>
-                    <div class="special_date">
-                        <p>Book date : 16/06/2026 - 31/12/2026</p>
-                        <p>Stay date : </p>
-                    </div>
-                    <div class="special_action">
-                        <a href="#" class="special_read">READ MORE</a>
-                        <a href="#" class="btn_special">BOOK NOW</a>
-                    </div>
-                </div>
-                <div class="special_content">
-                    <div class="special_card">
-                        <img src="/images2/sp2.png">
-                    </div>
-                    <div class="special_title">
-                        <h3>PHOENIX STAYCATION ESCAPE : 699,000 VND/PERSON</h3>
-                        <p>Experience a luxurious resort getaway from just 699,000 VND/person.</p>
-                    </div>
-                    <div class="special_date">
-                        <p>Book date: 16/06/2026 - 31/07/2026</p>
-                        <p>Stay date: 16/06/2026 - 31/07/2026</p>
-                    </div>
-                    <div class="special_action">
-                        <a href="#" class="special_read">READ MORE</a>
-                        <a href="#" class="btn_special">BOOK NOW</a>
-                    </div>
-                </div>
-                <div class="special_content">
-                    <div class="special_card">
-                        <img src="/images2/sp3.png">
-                    </div>
-                    <div class="special_title">
-                        <h3><span>THE CROWNE AFTERNOON TEA</span> 139K++/PAX</h3>
-                        <p>LUXURIOUS SUNSET TICKETS STARTING FROM ONLY 139K++/pax</p>
-                    </div>
-                    <div class="special_date">
-                        <p>Book date: 01/01/2026</p>
-                        <p>Stay date: 15/05/2026 - 31/12/2026</p>
-                    </div>
-                    <div class="special_action">
-                        <a href="#" class="special_read">READ MORE</a>
-                        <a href="#" class="btn_special">BOOK NOW</a>
-                    </div>
-                </div>
+    </section>
+    <section class="special_section">
+        <div class="special_container">
+            <div class="special_header">
+                <h2>SPECIAL OFFERS</h2>
+                <div class="divider_line"></div>
             </div>
-        <div class="btn_explore_offer">
+            <div class="special_grid">
+                <article class="special_card_item">
+                    <div class="card_inner">
+                        <div class="special_image">
+                            <img src="/images2/sp1.png" alt="Opening promotion" loading="lazy">
+                        </div>
+                        <div class="special_info">
+                            <div class="title_block">
+                                <h3>OPENING PROMOTION</h3>
+                                <p class="desc">Opening Promotion offers are available for all room types at Phoenix
+                                    Crowne Vinh Hotel.</p>
+                            </div>
+                            <div class="special_date">
+                                <p>Book date : 16/06/2026 - 31/12/2026</p>
+                                <p>Stay date : </p>
+                            </div>
+                            <div class="special_action">
+                                <a href="#" class="special_read">
+                                    READ MORE
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn_special">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="special_card_item">
+                    <div class="card_inner">
+                        <div class="special_image">
+                            <img src="/images2/sp2.png" alt="Phoenix Staycation" loading="lazy">
+                        </div>
+                        <div class="special_info">
+                            <div class="title_block">
+                                <h3>PHOENIX STAYCATION ESCAPE : 699,000 VND/PERSON</h3>
+                                <p class="desc">Experience a luxurious resort getaway from just 699,000 VND/person.</p>
+                            </div>
+                            <div class="special_date">
+                                <p>Book date: 16/06/2026 - 31/07/2026</p>
+                                <p>Stay date: 16/06/2026 - 31/07/2026</p>
+                            </div>
+                            <div class="special_action">
+                                <a href="#" class="special_read">
+                                    READ MORE
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn_special">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="special_card_item">
+                    <div class="card_inner">
+                        <div class="special_image">
+                            <img src="/images2/sp3.png" alt="Afternoon Tea" loading="lazy">
+                        </div>
+                        <div class="special_info">
+                            <div class="title_block">
+                                <h3
+                                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 600; font-size: 19px;">
+                                    THE CROWNE AFTERNOON TEA <span>139K++/PAX</span></h3>
+                                <p class="desc">LUXURIOUS SUNSET TICKETS STARTING FROM ONLY 139K++/pax</p>
+                            </div>
+                            <div class="special_date">
+                                <p>Book date: 01/01/2026</p>
+                                <p>Stay date: 15/05/2026 - 31/12/2026</p>
+                            </div>
+                            <div class="special_action">
+                                <a href="#" class="special_read">
+                                    READ MORE
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="btn_special">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="btn_explore_offer">
                 <a href="#" class="btn_explore">EXPLORE SPECIAL OFFERS</a>
             </div>
         </div>
-    </div>
-</section>
-<section class="experiences_section">
-    <div class="experiences_container">
-        <div class="experiences_header">
-            <h2>MEMORABLE EXPERIENCES</h2>
-            <hr style="width: 100px; border: 1px solid #9a9797; margin: 20px auto 60px auto;">
-        </div>
-        <div class="experiences_gallery">
-            <div class="experiences_item item_a">
-                <img src="/images2/me1.png">
+    </section>
+    <section class="experiences_section">
+        <div class="experiences_container">
+            <div class="experiences_header">
+                <h2>MEMORABLE EXPERIENCES</h2>
+                <div class="divider_line"></div>
             </div>
-            <div class="experiences_item">
-                <img src="/images2/me2.png">
-            </div>
-            <div class="experiences_item">
-                <img src="/images2/me3.png">
-            </div>
-            <div class="experiences_item">
-                <img src="/images2/me4.png">
-            </div>
-            <div class="experiences_item">
-                <img src="/images2/me5.png">
-            </div>
-            <div class="experiences_item">
-                <img src="/images2/d2.png">
-            </div>
-            <div class="experiences_item">
-                <img src="/images2/sp3.png">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="footer_section">
-    <div class="footer_container">
-        <div class="footer_main">
-            <div class="footer_logo">
-                <img src="/icon2/logo_gold.png" class="logo_f" alt="Phoenix Crowne Vinh Hotel">
-            </div>
-            <div class="footer_content">
-                <div class="footer_top_grid">
-                    <div class="top_grid_col">
-                        <h4 class="footer_title">PHOENIX CROWNE VINH HOTEL</h4>
-                        <ul class="footer_contact">
-                            <li>
-                                <img src="/icon2/location-pin-2.svg" class="icon" alt="Location">
-                               <span>78 Nguyen Thi Minh Khai, Thanh Vinh Ward, Nghe An Province, Vietnam</span>
-                            </li>
-                            <li>
-                                <img src="/icon2/phone-flip.svg" class="icon" alt="Phone">
-                                <a href="tel:+842388666686" class="contact_link">(+84) 238 866 6686</a>
-                            </li>
-                            <li>
-                                <img src="/icon2/mail-svgrepo-com.svg" class="icon" alt="Email">
-                                <a href="mailto:info@phoenixcrownehotel.com" class="contact_link">info@phoenixcrownehotel.com</a>
-                            </li>
-                        </ul>
+            <div class="experiences_gallery">
+                <button type="button" class="experiences_item item_a">
+                    <div class="img_wrapper">
+                        <img src="/images2/me1.png">
                     </div>
-                    <div class="top_grid_col">
-                        <h4 class="footer_title">FOLLOW US</h4>
-                        <div class="social_icon">
-                            <a href="#"><img src="/icon2/facebook.png" alt="Facebook"></a>
-                            <a href="#"><img src="/icon2/instagram.png" alt="Instagram"></a>
-                            <a href="#"><img src="/icon2/tiktok.png" alt="TikTok"></a>
+                </button>
+                <button type="button" class="experiences_item">
+                    <div class="img_wrapper">
+                        <img src="/images2/me2.png">
+                    </div>
+                </button>
+                <button type="button" class="experiences_item">
+                    <div class="img_wrapper">
+                        <img src="/images2/me3.png">
+                    </div>
+                </button>
+                <button type="button" class="experiences_item">
+                    <div class="img_wrapper">
+                        <img src="/images2/me4.png">
+                    </div>
+                </button>
+                <button type="button" class="experiences_item">
+                    <div class="img_wrapper">
+                        <img src="/images2/me5.png">
+                    </div>
+                </button>
+                <button type="button" class="experiences_item">
+                    <div class="img_wrapper">
+                        <img src="/images2/d2.png">
+                    </div>
+                </button>
+                <button type="button" class="experiences_item">
+                    <div class="img_wrapper">
+                        <img src="/images2/me7.png">
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="footer_section">
+        <div class="footer_container">
+            <div class="footer_main">
+                <div class="footer_logo">
+                    <img src="/icon2/logo_gold.png" class="logo_f" alt="Phoenix Crowne Vinh Hotel">
+                </div>
+                <div class="footer_content">
+                    <div class="footer_top_grid">
+                        <div class="top_grid_col">
+                            <h4 class="footer_title">PHOENIX CROWNE VINH HOTEL</h4>
+                            <ul class="footer_contact">
+                                <li>
+                                    <img src="/icon2/location-pin-2.svg" class="icon" alt="Location">
+                                    <span style="font-size: 15px; font-weight: 200; font-family: Arial, Helvetica, sans-serif; line-height: 1.8;">78 Nguyen Thi Minh Khai, Thanh Vinh Ward, Nghe An Province, Vietnam</span>
+                                </li>
+                                <li>
+                                    <img src="/icon2/phone-flip.svg" class="icon" alt="Phone">
+                                    <a href="tel:+842388666686" class="contact_link">(+84) 238 866 6686</a>
+                                </li>
+                                <li>
+                                    <img src="/icon2/mail-svgrepo-com.svg" class="icon" alt="Email">
+                                    <a href="mailto:info@phoenixcrownehotel.com"
+                                        class="contact_link">info@phoenixcrownehotel.com</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="footer_badge">
-                            <img src="/icon2/confirm_ecomerce.png" alt="Bộ Công Thương">
+                        <div class="top_grid_col">
+                            <h4 class="footer_title">FOLLOW US</h4>
+                            <div class="social_icon">
+                                <a href="#"><img src="/icon2/facebook.png" alt="Facebook"></a>
+                                <a href="#"><img src="/icon2/instagram.png" alt="Instagram"></a>
+                                <a href="#"><img src="/icon2/tiktok.png" alt="TikTok"></a>
+                            </div>
+                            <div class="footer_badge">
+                                <img src="/icon2/confirm_ecomerce.png" alt="Bộ Công Thương">
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="width: 96px; border: 1px solid #ffffff; margin: 20px auto 30px 0;">
+                    <div class="footer_links_grid">
+                        <div class="links_col">
+                            <a href="#">PRIVACY POLICY</a>
+                            <a href="#">DESTINATION</a>
+                            <a href="#">CAREERS</a>
+                            <a href="#">FEEDBACK</a>
+                        </div>
+                        <div class="links_col">
+                            <a href="#">PHOTO GALLERY</a>
+                            <a href="#">TERMS & CONDITIONS</a>
+                            <a href="#">CONTACT</a>
                         </div>
                     </div>
                 </div>
-                <hr style="width: 100px; border: 1px solid #ffffff; margin: 20px auto 30px 0;">
-                <div class="footer_links_grid">
-                    <div class="links_col">
-                        <a href="#">PRIVACY POLICY</a>
-                        <a href="#">DESTINATION</a>
-                        <a href="#">CAREERS</a>
-                        <a href="#">FEEDBACK</a>
-                    </div>
-                    <div class="links_col">
-                        <a href="#">PHOTO GALLERY</a>
-                        <a href="#">TERMS & CONDITIONS</a>
-                        <a href="#">CONTACT</a>
-                    </div>
-                </div>
-
             </div>
         </div>
         <div class="footer_bottom">
             <p>© Copyright 2025. All rights reserved. Phoenix Crowne Vinh Hotel</p>
         </div>
-    </div>
-</section>
-<script>
-        window.addEventListener('scroll', function() {
+    </section>
+    <script>
+        window.addEventListener('scroll', function () {
             const header = document.querySelector('.header');
             if (window.scrollY > 100) {
                 header.classList.add('scrolled');
@@ -449,5 +610,21 @@
             }
         });
     </script>
+    <script>
+        const slide = document.querySelector('.slide');
+
+        const currentRoom = document.getElementById('current_room');
+
+        slide.addEventListener('scroll', function () {
+
+            const slideWidth = slide.clientWidth;
+
+            const currentIndex = Math.round(slide.scrollLeft / slideWidth);
+
+            currentRoom.textContent = currentIndex + 1;
+
+        });
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css2/phoenix.css">
+</head>
+<body>
+    <header class="header">
+    <div class="header-inner">
+        <!-- Khối chứa tất cả phần tử nằm chụm ở giữa -->
+        <div class="header-main-flex">
+            
+            <!-- 1. Nút Ngôn ngữ (Nằm trái khi trên Mobile) -->
+            <div class="header-left-mobile">
+                <div class="lang-select">EN ▾</div>
+            </div>
+
+            <!-- 2. Logo (Căn giữa Mobile, đứng đầu cụm trên Desktop) -->
+            <div class="logo-container">
+                <a href="/" class="logo-link">
+                    <img src="/icon2/logo.png" alt="Phoenix Crowne Vinh Hotel">
+                </a>
+            </div>
+
+            <!-- 3. Nav Menu Desktop -->
+            <nav class="nav-container">
+                <ul class="nav-list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">ROOMS & SUITES</a></li>
+                    <li><a href="#">DINING ▾</a></li>
+                    <li><a href="#">MEETING & EVENT</a></li>
+                    <li><a href="#">SPA</a></li>
+                    <li><a href="#">FACILITIES</a></li>
+                    <li><a href="#">SPECIAL OFFERS</a></li>
+                </ul>
+            </nav>
+
+            <!-- 4. Cụm nút bấm bên phải -->
+            <div class="header-right-actions">
+                <a href="#" class="btn-book-header">BOOK NOW</a>
+                <!-- Nút Ngôn ngữ trên Desktop -->
+                <div class="lang-select desktop-only">EN ▾</div>
+                
+                <!-- Nút Hamburger 3 gạch trên Mobile -->
+                <button class="mobile-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</header>
+</body>
+</html>
