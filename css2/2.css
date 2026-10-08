@@ -296,6 +296,7 @@ body {
     text-decoration: none;
     font-size: 12px;
     font-weight: 600;
+    font-family: 'Be Vietnam Pro', sans-serif;
     white-space: nowrap;
 }
 
@@ -329,7 +330,7 @@ body {
     height: 2px;
     width: 24px;
     background-color: currentColor;
-    border-radius: 9999px;
+    border-radius: 99px;
 }
 
 .header_mobile_container {
@@ -375,7 +376,7 @@ body {
         display: none !important;
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023.98px) {
     .header_container {
         display: none !important;
     }
@@ -396,6 +397,16 @@ body {
 
     .mobile_col_left .language {
         margin-left: 0;
+    }
+    .mobile_col_left .lang_selected img {
+        display: none;
+    }
+
+    .mobile_col_left .lang_dropdown img {
+        display: none;
+    }
+    .mobile_col_left .lang_dropdown li a {
+        font-family: 'Be Vietnam Pro', sans-serif;
     }
 
     .mobile_col_center {
@@ -613,7 +624,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .booking_content {
         bottom: 88px;
     }
@@ -695,7 +706,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 16px;
 }
 
 .about_title {
@@ -743,19 +754,19 @@ body {
     object-fit: cover;
 }
 
-@media screen and (max-width: 1279px) {
+@media  (max-width: 1279px) {
     .container-about {
-        max-width: 100% !important;
-        padding-left: 30px !important;
-        padding-right: 30px !important;
+        max-width: 100% ;
+        padding-left: 30px ;
+        padding-right: 30px ;
     }
 
     .about_grid {
-        gap: 40px !important;
+        gap: 40px ;
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media  (max-width: 1023px) {
     .about_padding {
         padding-top: 48px;
         padding-bottom: 48px;
@@ -766,10 +777,10 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media  (max-width: 768px) {
     .container-about {
-        padding-left: 16px !important;
-        padding-right: 16px !important;
+        padding-left: 15px ;
+        padding-right: 15px;
     }
 
     .about_grid {
@@ -783,6 +794,7 @@ body {
 
     .about_image_wrapper {
         aspect-ratio: 1/1;
+        margin-top: 16px;
     }
 }
 
@@ -818,8 +830,6 @@ body {
     display: flex;
     align-items: stretch;
     gap: 40px;
-    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-    will-change: transform;
 }
 
 .gallery_item {
@@ -845,7 +855,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: filter 700ms ease-out, opacity 700ms ease-out;
     opacity: 1;
 }
 
@@ -890,7 +899,6 @@ body {
 }
 
 .btn_view_all {
-    border-radius: 0px;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 8px;
@@ -898,11 +906,8 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
+    color: #5e392e;
     text-transform: uppercase;
-    color: var(--second-color);
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-    transition-duration: 150ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     display: flex;
     gap: 20px;
@@ -918,9 +923,7 @@ body {
 }
 .btn_view_all .icon_wrapper {
     width: 24px;
-    /* w-6 */
     height: 24px;
-    /* h-6 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -942,25 +945,24 @@ body {
 }
 @media (min-width: 1440px) and (max-width: 1919.98px) {
     .gallery_item {
-        flex: 0 0 calc((100% - 3 * 35px) / 4);
-        width: calc((100% - 3 * 35px) / 4);
+        flex: 0 0 calc((100% - 3 * 40px) / 4);
+        width: calc((100% - 3 * 40px) / 4);
     }
 }
 @media (min-width: 992px) and (max-width: 1439.98px) {
     .gallery_item {
-        flex: 0 0 calc((100% - 2 * 35px) / 3);
-        width: calc((100% - 2 * 35px) / 3);
+        flex: 0 0 calc((100% - 2 * 40px) / 3);
+        width: calc((100% - 2 * 40px) / 3);
     }
 }
 @media (min-width: 650px) and (max-width: 991.98px) {
     .gallery_item {
-        flex: 0 0 calc((100% - 1 * 30px) / 2);
-        width: calc((100% - 1 * 30px) / 2);
+        flex: 0 0 calc((100% - 1 * 40px) / 2);
+        width: calc((100% - 1 * 40px) / 2);
     }
 }
 @media (max-width: 649.98px) {
-    .container_gallery,
-    .room_section {
+    .container_gallery{
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 48px;
@@ -979,7 +981,7 @@ body {
 .room_section {
     background: #002f24;
     color: white;
-    padding: 80px 0;
+    padding: 96px 0;
 }
 
 .room_container {
@@ -988,19 +990,19 @@ body {
 
 .room_header {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 64px;
 }
 
 .room_header h2 {
     font-size: 36px;
     font-weight: 400;
-    margin-bottom: 13px;
 }
 
 .room_header p {
     font-size: 15px;
     text-transform: uppercase;
    font-family: 'Be Vietnam Pro', sans-serif;
+   margin-top: 12px;
 }
 
 .slide {
@@ -1079,10 +1081,10 @@ body {
 
 .room_count {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 15px;
     font-size: 17px;
     color: white;
-    margin-bottom: 15px;
+    
 }
 @media (min-width: 650px) and (max-width: 1279px) {
     .room_section {
@@ -1094,8 +1096,14 @@ body {
         max-width: 100%;
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 48px;
+        padding-bottom: 48px;
         margin: 0 auto;
         box-sizing: border-box;
+    }
+    .room_header h2 {
+        font-size: 28px;
+        line-height: 26px;
     }
 
     .slide {
@@ -1103,7 +1111,6 @@ body {
         max-width: 1224px;
         height: auto;
         aspect-ratio: 16 / 9;
-        /* Tỷ lệ 1224x688.5 chuẩn DevTools */
         margin: 0 auto;
     }
 
@@ -1162,16 +1169,6 @@ body {
     .slide::-webkit-scrollbar {
         height: 10px;
         width: 15px;
-    }
-
-    .slide::-webkit-scrollbar-track {
-        background: rgba(245, 242, 242, 0.1);
-        border-radius: 4px;
-    }
-
-    .slide::-webkit-scrollbar-thumb {
-        background: #ffffff;
-        border-radius: 4px;
     }
 
     .slide::-webkit-scrollbar-thumb:hover {
@@ -1415,7 +1412,7 @@ body {
 }
 
 .dining_info h4 {
-    font-size: 18px; 
+    font-size: 15px; 
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 24px;
@@ -1459,7 +1456,7 @@ body {
 @media (max-width: 1279px) {
     .dining_container {
         max-width: 100%;
-        padding: 48px; 
+        padding: 48px;
     }
 
     .dining_header {
@@ -1470,34 +1467,31 @@ body {
         font-size: 28px;
         line-height: 26px;
     }
-    .dining_header h3{
+
+    .dining_header h3 {
         font-size: 15px;
         line-height: 22.5px;
     }
 }
+
 @media (max-width: 767px) {
     .dining_section {
-        padding-top: 48px; 
+        padding-top: 48px;
         padding-bottom: 48px;
     }
 
     .dining_grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 
     .dining_info h4 {
-        font-size: 15px; 
+        font-size: 15px;
     }
 }
-@media (max-width: 1279px) and (min-width: 650px) {
-    .dining_container {
-        padding-left: 48px;
-        padding-right: 48px;
-    }
-}
+
 @media (max-width: 649px) {
     .dining_container {
-        padding-left: 16px; 
+        padding-left: 16px;
         padding-right: 16px;
     }
 }
@@ -1510,15 +1504,15 @@ body {
 
 .other_container {
     width: 100%;
-    max-width: 1160px;
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 .other_header {
     text-align: center;
-    margin-bottom: 32px;  
+    margin-bottom: 64px;  
 }
 
 .other_header h2 {
@@ -1623,9 +1617,24 @@ body {
 .read_more:hover {
     color: #003d32;
 }
-@media (min-width: 1280px) {
+@media (max-width: 1279px) {
+    .other_container {
+        max-width: none;
+        margin: 0;
+        padding: 48px;
+    }
+
     .other_header {
-        margin-bottom: 64px;   
+        margin-bottom: 32px;
+    }
+
+    .other_header h2 {
+        font-size: 28px;
+        line-height: 26px;
+    }
+
+    .divider_line {
+        margin-top: 16px;
     }
 }
 @media (min-width: 1024px) {
@@ -1647,7 +1656,7 @@ body {
     }
 
     .other_header h2 {
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.1;
     }
     .other_grid {
@@ -1656,17 +1665,11 @@ body {
         overflow-x: auto;
         overflow-y: hidden;
         scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
         padding-bottom: 16px;
-        scrollbar-width: thin;
+        scrollbar-width:thin;
     }
-
-    .other_grid::-webkit-scrollbar { height: 6px; }
-    .other_grid::-webkit-scrollbar-track { background: #e5e0d8; border-radius: 3px; }
-    .other_grid::-webkit-scrollbar-thumb { background: #b3b3b3; border-radius: 3px; }
-
     .other_card {
-          flex: 0 0 60%;
+        flex: 0 0 60%;
         width: 60%;
         aspect-ratio: 546.406 / 638.455;   
         scroll-snap-align: center;
@@ -1714,7 +1717,6 @@ body {
         overflow: hidden;
     }
     .other_title h3 {
-        font-family: 'redRose', serif;
         font-size: 24px;
         font-weight: 400;
         line-height: 30px;
@@ -1723,13 +1725,12 @@ body {
     }
 
     .other_title h4 {
-        font-family: 'beVietnamPro', sans-serif;
         font-size: 16px;
         font-weight: 500;
         line-height: 20px;
     }
     .other_title p {
-        font-family: 'beVietnamPro', sans-serif;
+        
         font-size: 15px;
         line-height: 24.375px;
         display: -webkit-box;
@@ -1870,8 +1871,7 @@ body {
 .special_section {
     width: 100%;
     background-color: #002f24;
-    color: #ffffff;
-    padding: 48px 0;                
+    color: #ffffff;             
 }
 
 .special_container {
@@ -1888,7 +1888,7 @@ body {
 
 .special_header h2 {
     font-family:"Red Rose", serif ;  
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 400;
     text-transform: uppercase;
     color: #ffffff;
@@ -1910,15 +1910,9 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
     padding-bottom: 24px;           
     scrollbar-width: thin;
 }
-
-.special_grid::-webkit-scrollbar { height: 6px; }
-.special_grid::-webkit-scrollbar-track { background: #e5e0d8; border-radius: 3px; }
-.special_grid::-webkit-scrollbar-thumb { background: #b3b3b3; border-radius: 3px; }
-
 .special_card_item {
     width: 100%;
     height: 100%;
@@ -1981,11 +1975,11 @@ body {
 }
 
 .special_date {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .special_date p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
     font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0;
@@ -2062,14 +2056,22 @@ body {
     background-color: #ffffff;
     color: #000000;
 }
+@media (max-width: 649px) {
+    .special_section {
+        padding: 48px 0;       
+    }
+}
 @media (min-width: 650px) and (max-width: 767px) {
+    .special_section {
+        padding: 48px 0;       
+    }
     .special_container {
         padding: 48px;
     }
 }
 @media (min-width: 768px) {
     .special_section {
-        padding: 48px 0 96px;       
+        padding: 96px 0;       
     }
 
     .special_container {
@@ -2143,10 +2145,21 @@ body {
         font-size: 18px;            
     }
 }
+@media (max-width: 1279px) {
+    .special_header h2 {
+        font-size: 28px;
+        line-height: 26px;
+    }
+}
+@media (max-width: 649px) {
+    .special_header h2 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+}
 .experiences_section {
     width: 100%;
-    background-color: #f6f3ee;
-    padding: 48px 0;                
+    background-color: #f6f3ee;      
 }
 
 .experiences_container {
@@ -2207,7 +2220,6 @@ body {
     overflow: hidden;
 }
 
-/* Card nhỏ: luôn vuông 1/1 */
 .experiences_item:not(.item_a) .img_wrapper {
     aspect-ratio: 1 / 1;            
 }
@@ -2226,7 +2238,11 @@ body {
 .experiences_item:hover img {
     transform: scale(1.05);         
 }
-
+@media (max-width: 649px) {
+    .experiences_section {
+        padding: 48px 0;              
+    }
+}
 @media (min-width: 650px) {
     .experiences_container {
         padding: 48px;              
@@ -2239,7 +2255,7 @@ body {
 
 @media (min-width: 768px) {
     .experiences_section {
-        padding: 48px 0 96px;       
+        padding: 96px 0 ;       
     }
 
     .divider_line {
